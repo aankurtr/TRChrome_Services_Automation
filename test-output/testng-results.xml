@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="23" passed="19">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="12810" started-at="2018-12-07T02:29:31Z" finished-at="2018-12-07T02:29:43Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="12810" started-at="2018-12-07T02:29:31Z" finished-at="2018-12-07T02:29:43Z">
+      <class name="TestAPIs.Styles">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Styles@7920ba90]" name="setup" is-config="true" duration-ms="1" started-at="2018-12-06T20:29:41Z" finished-at="2018-12-06T20:29:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="stylesRequest()[pri:0, instance:TestAPIs.Styles@7920ba90]" name="stylesRequest" duration-ms="427" started-at="2018-12-06T20:29:41Z" finished-at="2018-12-06T20:29:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stylesRequest -->
+        <test-method status="PASS" signature="stylesRequestIncorrectModelIdFormat()[pri:0, instance:TestAPIs.Styles@7920ba90]" name="stylesRequestIncorrectModelIdFormat" duration-ms="292" started-at="2018-12-06T20:29:41Z" finished-at="2018-12-06T20:29:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stylesRequestIncorrectModelIdFormat -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Styles@7920ba90]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:41Z" finished-at="2018-12-06T20:29:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Styles@7920ba90]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:41Z" finished-at="2018-12-06T20:29:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="stylesRequestInvalidModelId()[pri:0, instance:TestAPIs.Styles@7920ba90]" name="stylesRequestInvalidModelId" duration-ms="613" started-at="2018-12-06T20:29:41Z" finished-at="2018-12-06T20:29:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stylesRequestInvalidModelId -->
+      </class> <!-- TestAPIs.Styles -->
+      <class name="TestAPIs.Models">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Models@23282c25]" name="setup" is-config="true" duration-ms="1" started-at="2018-12-06T20:29:35Z" finished-at="2018-12-06T20:29:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="modelsRequest()[pri:0, instance:TestAPIs.Models@23282c25]" name="modelsRequest" duration-ms="470" started-at="2018-12-06T20:29:35Z" finished-at="2018-12-06T20:29:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modelsRequest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Models@23282c25]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:35Z" finished-at="2018-12-06T20:29:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="modelsRequestDivisionIdOtherThan1()[pri:0, instance:TestAPIs.Models@23282c25]" name="modelsRequestDivisionIdOtherThan1" duration-ms="718" started-at="2018-12-06T20:29:35Z" finished-at="2018-12-06T20:29:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modelsRequestDivisionIdOtherThan1 -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Models@23282c25]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:36Z" finished-at="2018-12-06T20:29:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="modelsRequestFutureYear()[pri:0, instance:TestAPIs.Models@23282c25]" name="modelsRequestFutureYear" duration-ms="663" started-at="2018-12-06T20:29:36Z" finished-at="2018-12-06T20:29:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modelsRequestFutureYear -->
+        <test-method status="FAIL" signature="modelsRequestInvalidAccountSecret()[pri:0, instance:TestAPIs.Models@23282c25]" name="modelsRequestInvalidAccountSecret" duration-ms="1068" started-at="2018-12-06T20:29:37Z" finished-at="2018-12-06T20:29:38Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <500>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:123)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:131)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at TestAPIs.Models.modelsRequestInvalidAccountSecret(Models.java:222)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modelsRequestInvalidAccountSecret -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Models@23282c25]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:37Z" finished-at="2018-12-06T20:29:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="modelsRequestInvalidAccoutNumber()[pri:0, instance:TestAPIs.Models@23282c25]" name="modelsRequestInvalidAccoutNumber" duration-ms="1065" started-at="2018-12-06T20:29:38Z" finished-at="2018-12-06T20:29:39Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <500>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:123)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:131)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at TestAPIs.Models.modelsRequestInvalidAccoutNumber(Models.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modelsRequestInvalidAccoutNumber -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Models@23282c25]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:38Z" finished-at="2018-12-06T20:29:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Models@23282c25]" name="setup" is-config="true" duration-ms="1" started-at="2018-12-06T20:29:39Z" finished-at="2018-12-06T20:29:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="modelsRequestInvalidDivisionIDFormat()[pri:0, instance:TestAPIs.Models@23282c25]" name="modelsRequestInvalidDivisionIDFormat" duration-ms="506" started-at="2018-12-06T20:29:39Z" finished-at="2018-12-06T20:29:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modelsRequestInvalidDivisionIDFormat -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Models@23282c25]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:39Z" finished-at="2018-12-06T20:29:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="modelsRequestInvalidRegionCode()[pri:0, instance:TestAPIs.Models@23282c25]" name="modelsRequestInvalidRegionCode" duration-ms="317" started-at="2018-12-06T20:29:39Z" finished-at="2018-12-06T20:29:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modelsRequestInvalidRegionCode -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Models@23282c25]" name="setup" is-config="true" duration-ms="1" started-at="2018-12-06T20:29:40Z" finished-at="2018-12-06T20:29:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="modelsRequestInvalidService()[pri:0, instance:TestAPIs.Models@23282c25]" name="modelsRequestInvalidService" duration-ms="596" started-at="2018-12-06T20:29:40Z" finished-at="2018-12-06T20:29:40Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <500>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
+	at sun.reflect.GeneratedMethodAccessor68.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:123)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:131)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at TestAPIs.Models.modelsRequestInvalidService(Models.java:279)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modelsRequestInvalidService -->
+        <test-method status="PASS" signature="modelsRequestInvalidYearFormat()[pri:0, instance:TestAPIs.Models@23282c25]" name="modelsRequestInvalidYearFormat" duration-ms="300" started-at="2018-12-06T20:29:40Z" finished-at="2018-12-06T20:29:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modelsRequestInvalidYearFormat -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Models@23282c25]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:40Z" finished-at="2018-12-06T20:29:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- TestAPIs.Models -->
+      <class name="TestAPIs.Vin">
+        <test-method status="PASS" signature="vehicleDescriptionVehicleVin()[pri:1, instance:TestAPIs.Vin@4b168fa9]" name="vehicleDescriptionVehicleVin" duration-ms="383" started-at="2018-12-06T20:29:42Z" finished-at="2018-12-06T20:29:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vehicleDescriptionVehicleVin -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestAPIs.Vin@4b168fa9]" name="setUp" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:42Z" finished-at="2018-12-06T20:29:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="vehicleDescriptionVehicleSpecificInformationByInvalidVin()[pri:2, instance:TestAPIs.Vin@4b168fa9]" name="vehicleDescriptionVehicleSpecificInformationByInvalidVin" duration-ms="536" started-at="2018-12-06T20:29:42Z" finished-at="2018-12-06T20:29:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vehicleDescriptionVehicleSpecificInformationByInvalidVin -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestAPIs.Vin@4b168fa9]" name="setUp" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:42Z" finished-at="2018-12-06T20:29:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestAPIs.Vin@4b168fa9]" name="setUp" is-config="true" duration-ms="1" started-at="2018-12-06T20:29:43Z" finished-at="2018-12-06T20:29:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="vehicleDescriptionVehicleSpecificInformationByVin()[pri:2, instance:TestAPIs.Vin@4b168fa9]" name="vehicleDescriptionVehicleSpecificInformationByVin" duration-ms="488" started-at="2018-12-06T20:29:43Z" finished-at="2018-12-06T20:29:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vehicleDescriptionVehicleSpecificInformationByVin -->
+      </class> <!-- TestAPIs.Vin -->
+      <class name="TestAPIs.Divisions">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="setup" is-config="true" duration-ms="4" started-at="2018-12-06T20:29:31Z" finished-at="2018-12-06T20:29:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="divisionRequestWithFutureYear()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="divisionRequestWithFutureYear" duration-ms="1311" started-at="2018-12-06T20:29:31Z" finished-at="2018-12-06T20:29:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divisionRequestWithFutureYear -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:32Z" finished-at="2018-12-06T20:29:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="divisionRequestWithIncorrectAccountSecret()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="divisionRequestWithIncorrectAccountSecret" duration-ms="451" started-at="2018-12-06T20:29:32Z" finished-at="2018-12-06T20:29:33Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <200>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:238)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:123)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:131)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at TestAPIs.Divisions.divisionRequestWithIncorrectAccountSecret(Divisions.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divisionRequestWithIncorrectAccountSecret -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:33Z" finished-at="2018-12-06T20:29:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="divisionRequestWithIncorrectRegionCode()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="divisionRequestWithIncorrectRegionCode" duration-ms="310" started-at="2018-12-06T20:29:33Z" finished-at="2018-12-06T20:29:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divisionRequestWithIncorrectRegionCode -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:33Z" finished-at="2018-12-06T20:29:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="divisionRequestWithIncorrectService()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="divisionRequestWithIncorrectService" duration-ms="301" started-at="2018-12-06T20:29:33Z" finished-at="2018-12-06T20:29:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divisionRequestWithIncorrectService -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:33Z" finished-at="2018-12-06T20:29:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="divisionRequestWithIncorrectYearFormat()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="divisionRequestWithIncorrectYearFormat" duration-ms="311" started-at="2018-12-06T20:29:33Z" finished-at="2018-12-06T20:29:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divisionRequestWithIncorrectYearFormat -->
+        <test-method status="PASS" signature="divisionRequestWithInvalidYear()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="divisionRequestWithInvalidYear" duration-ms="304" started-at="2018-12-06T20:29:33Z" finished-at="2018-12-06T20:29:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divisionRequestWithInvalidYear -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:33Z" finished-at="2018-12-06T20:29:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="setup" is-config="true" duration-ms="1" started-at="2018-12-06T20:29:34Z" finished-at="2018-12-06T20:29:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="divisionsRequest()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="divisionsRequest" duration-ms="784" started-at="2018-12-06T20:29:34Z" finished-at="2018-12-06T20:29:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divisionsRequest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="setup" is-config="true" duration-ms="0" started-at="2018-12-06T20:29:35Z" finished-at="2018-12-06T20:29:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="divisionsRequestWithIncorrectAccountNumber()[pri:0, instance:TestAPIs.Divisions@1a84f40f]" name="divisionsRequestWithIncorrectAccountNumber" duration-ms="446" started-at="2018-12-06T20:29:35Z" finished-at="2018-12-06T20:29:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divisionsRequestWithIncorrectAccountNumber -->
+      </class> <!-- TestAPIs.Divisions -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

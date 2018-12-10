@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestAPIs.Styles" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-12-10T18:47:16" hostname="Ankurs-MacBook-Pro.local" time="1.917">
+  <properties/>
+  <testcase name="stylesRequest" classname="TestAPIs.Styles" time="0.865"/>
+  <testcase name="stylesRequestIncorrectModelIdFormat" classname="TestAPIs.Styles" time="0.463"/>
+  <testcase name="stylesRequestInvalidModelId" classname="TestAPIs.Styles" time="0.587"/>
+  <system-out><![CDATA[on test start
+HTTP/1.1 200 
+Date: Mon, 10 Dec 2018 18:47:17 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+{
+    "responseStatus": {
+        "matchedEquipment": [
+            
+        ],
+        "matchedNonFactoryEquipment": [
+            
+        ],
+        "status": [
+            
+        ],
+        "responseCode": "Successful",
+        "description": "Successful"
+    },
+    "style": [
+        {
+            "value": "3dr Sport Cpe GS Auto",
+            "id": 11034
+        },
+        {
+            "value": "3dr Sport Cpe GS Manual",
+            "id": 11033
+        },
+        {
+            "value": "3dr Sport Cpe GS-R Manual",
+            "id": 11035
+        },
+        {
+            "value": "3dr Sport Cpe LS Auto",
+            "id": 11032
+        },
+        {
+            "value": "3dr Sport Cpe LS Manual",
+            "id": 11031
+        },
+        {
+            "value": "3dr Sport Cpe Type-R Manual",
+            "id": 11036
+        },
+        {
+            "value": "4dr Sdn GS Auto",
+            "id": 11040
+        },
+        {
+            "value": "4dr Sdn GS Manual",
+            "id": 11039
+        },
+        {
+            "value": "4dr Sdn GS-R Manual",
+            "id": 11041
+        },
+        {
+            "value": "4dr Sdn LS Auto",
+            "id": 11038
+        },
+        {
+            "value": "4dr Sdn LS Manual",
+            "id": 11037
+        }
+    ]
+}
+on test success
+HTTP/1.1 400 
+Date: Mon, 10 Dec 2018 18:47:17 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+{
+    "timestamp": "2018-12-10T18:47:17.715+0000",
+    "status": 400,
+    "error": "Bad Request",
+    "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"ABC\"",
+    "path": "/chrome/styles"
+}
+on test success
+HTTP/1.1 404 
+Date: Mon, 10 Dec 2018 18:47:18 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+{
+    "error": true,
+    "statusText": "NOT_FOUND",
+    "message": "data not found"
+}
+on test success
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

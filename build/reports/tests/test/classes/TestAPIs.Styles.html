@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class TestAPIs.Styles</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class TestAPIs.Styles</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/TestAPIs.html">TestAPIs</a> &gt; Styles</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.915s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">stylesRequest</td>
+<td class="success">0.865s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">stylesRequestIncorrectModelIdFormat</td>
+<td class="success">0.463s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">stylesRequestInvalidModelId</td>
+<td class="success">0.587s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>on test start
+HTTP/1.1 200 
+Date: Mon, 10 Dec 2018 18:47:17 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+{
+    &quot;responseStatus&quot;: {
+        &quot;matchedEquipment&quot;: [
+            
+        ],
+        &quot;matchedNonFactoryEquipment&quot;: [
+            
+        ],
+        &quot;status&quot;: [
+            
+        ],
+        &quot;responseCode&quot;: &quot;Successful&quot;,
+        &quot;description&quot;: &quot;Successful&quot;
+    },
+    &quot;style&quot;: [
+        {
+            &quot;value&quot;: &quot;3dr Sport Cpe GS Auto&quot;,
+            &quot;id&quot;: 11034
+        },
+        {
+            &quot;value&quot;: &quot;3dr Sport Cpe GS Manual&quot;,
+            &quot;id&quot;: 11033
+        },
+        {
+            &quot;value&quot;: &quot;3dr Sport Cpe GS-R Manual&quot;,
+            &quot;id&quot;: 11035
+        },
+        {
+            &quot;value&quot;: &quot;3dr Sport Cpe LS Auto&quot;,
+            &quot;id&quot;: 11032
+        },
+        {
+            &quot;value&quot;: &quot;3dr Sport Cpe LS Manual&quot;,
+            &quot;id&quot;: 11031
+        },
+        {
+            &quot;value&quot;: &quot;3dr Sport Cpe Type-R Manual&quot;,
+            &quot;id&quot;: 11036
+        },
+        {
+            &quot;value&quot;: &quot;4dr Sdn GS Auto&quot;,
+            &quot;id&quot;: 11040
+        },
+        {
+            &quot;value&quot;: &quot;4dr Sdn GS Manual&quot;,
+            &quot;id&quot;: 11039
+        },
+        {
+            &quot;value&quot;: &quot;4dr Sdn GS-R Manual&quot;,
+            &quot;id&quot;: 11041
+        },
+        {
+            &quot;value&quot;: &quot;4dr Sdn LS Auto&quot;,
+            &quot;id&quot;: 11038
+        },
+        {
+            &quot;value&quot;: &quot;4dr Sdn LS Manual&quot;,
+            &quot;id&quot;: 11037
+        }
+    ]
+}
+on test success
+HTTP/1.1 400 
+Date: Mon, 10 Dec 2018 18:47:17 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+{
+    &quot;timestamp&quot;: &quot;2018-12-10T18:47:17.715+0000&quot;,
+    &quot;status&quot;: 400,
+    &quot;error&quot;: &quot;Bad Request&quot;,
+    &quot;message&quot;: &quot;Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \&quot;ABC\&quot;&quot;,
+    &quot;path&quot;: &quot;/chrome/styles&quot;
+}
+on test success
+HTTP/1.1 404 
+Date: Mon, 10 Dec 2018 18:47:18 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+{
+    &quot;error&quot;: true,
+    &quot;statusText&quot;: &quot;NOT_FOUND&quot;,
+    &quot;message&quot;: &quot;data not found&quot;
+}
+on test success
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at Dec 10, 2018 12:47:19 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestAPIs.Vin" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-12-10T18:47:18" hostname="Ankurs-MacBook-Pro.local" time="1.215">
+  <properties/>
+  <testcase name="vehicleDescriptionVehicleVin" classname="TestAPIs.Vin" time="0.661"/>
+  <testcase name="vehicleDescriptionVehicleSpecificInformationByVin" classname="TestAPIs.Vin" time="0.553"/>
+  <system-out><![CDATA[on test start
+HTTP/1.1 200 
+Date: Mon, 10 Dec 2018 18:47:18 GMT
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 18
+Connection: keep-alive
+
+/1B4GH44R2RX355616
+/1B4GH44R2RX355616
+on test success
+vin:1B4GH44R2RX355616
+HTTP/1.1 200 
+Date: Mon, 10 Dec 2018 18:47:19 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+{
+    "responseStatus": {
+        "matchedEquipment": [
+            
+        ],
+        "matchedNonFactoryEquipment": [
+            
+        ],
+        "status": [
+            
+        ],
+        "responseCode": "Successful",
+        "description": "Successful"
+    },
+    "vinDescription": {
+        "gvwr": {
+            "low": 0.0,
+            "high": 6000.0
+        },
+        "worldManufacturerIdentifier": "United States Reserved ",
+        "manufacturerIdentificationCode": null,
+        "restraintTypes": [
+            
+        ],
+        "marketClass": [
+            {
+                "value": "Mini-Van (Passenger)",
+                "id": 61
+            }
+        ],
+        "vin": "1B4GH44R2RX355616",
+        "modelYear": 1994,
+        "division": "Dodge",
+        "modelName": "Grand Caravan",
+        "styleName": "3dr SE 119\" WB",
+        "bodyType": "Sports Van",
+        "drivingWheels": "Front",
+        "builddata": "no",
+        "built": null,
+        "builtMSRP": null
+    },
+    "style": [
+        {
+            "division": {
+                "value": "Dodge",
+                "id": 11
+            },
+            "subdivision": {
+                "value": "Dodge Passenger Vans",
+                "id": 2770
+            },
+            "model": {
+                "value": "Caravan",
+                "id": 10599
+            },
+            "basePrice": {
+                "unknown": false,
+                "invoice": 17512.52,
+                "msrp": 19304.0,
+                "destination": 560.0
+            },
+            "bodyType": [
+                
+            ],
+            "marketClass": {
+                "value": "Mini-Van (Passenger)",
+                "id": 61
+            },
+            "stockImage": null,
+            "mediaGallery": null,
+            "acode": [
+                {
+                    "value": "USA40DOV171B0",
+                    "logic": null
+                }
+            ],
+            "id": 137768,
+            "modelYear": 1994,
+            "name": "3dr Grand SE 119\" WB",
+            "nameWoTrim": "3dr 119\" WB",
+            "trim": "Grand SE",
+            "mfrModelCode": "ASKH53",
+            "fleetOnly": false,
+            "modelFleet": false,
+            "passDoors": 0,
+            "altModelName": null,
+            "altStyleName": null,
+            "altBodyType": null,
+            "drivetrain": null
+        }
+    ],
+    "engine": [
+        {
+            "engineType": {
+                "value": "V6 Cylinder Engine",
+                "id": 1051
+            },
+            "fuelType": {
+                "value": "Gasoline Fuel",
+                "id": 1059
+            },
+            "horsepower": null,
+            "netTorque": null,
+            "cylinders": 6,
+            "displacement": {
+                "value": [
+                    {
+                        "value": "3.3",
+                        "unit": "liters"
+                    },
+                    {
+                        "value": "201",
+                        "unit": "cubicIn"
+                    }
+                ]
+            },
+            "fuelEconomy": null,
+            "fuelCapacity": null,
+            "forcedInduction": null,
+            "installed": {
+                "cause": "VIN",
+                "detail": null
+            },
+            "highOutput": false
+        }
+    ],
+    "standard": [
+        {
+            "header": {
+                "value": "MECHANICAL",
+                "id": 1236
+            },
+            "description": "90-amp alternator",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "MECHANICAL",
+                "id": 1236
+            },
+            "description": "500-amp maintenance-free battery",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "MECHANICAL",
+                "id": 1236
+            },
+            "description": "Front suspension-inc: anti-topping ISO struts w/coil springs",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "MECHANICAL",
+                "id": 1236
+            },
+            "description": "Rear suspension-inc: anti-topping shock absorbers w/leaf springs",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "MECHANICAL",
+                "id": 1236
+            },
+            "description": "\"Luxury\" wheel covers",
+            "category": [
+                {
+                    "id": 1207,
+                    "removed": null
+                }
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "MECHANICAL",
+                "id": 1236
+            },
+            "description": "Pwr-assisted rack & pinion steering",
+            "category": [
+                {
+                    "id": 1084,
+                    "removed": null
+                }
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "MECHANICAL",
+                "id": 1236
+            },
+            "description": "Pwr-assisted front disc/rear drum brakes",
+            "category": [
+                {
+                    "id": 1022,
+                    "removed": null
+                }
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "MECHANICAL",
+                "id": 1236
+            },
+            "description": "20 Gallon fuel tank w/tethered fuel cap",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "MECHANICAL",
+                "id": 1236
+            },
+            "description": "Stainless steel exhaust",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "EXTERIOR",
+                "id": 1176
+            },
+            "description": "Painted body-side stripe",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "EXTERIOR",
+                "id": 1176
+            },
+            "description": "Accent colored front/rear wrap-around fascia w/body color soft face",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "EXTERIOR",
+                "id": 1176
+            },
+            "description": "Body-side body-colored moldings",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "EXTERIOR",
+                "id": 1176
+            },
+            "description": "Aero style single halogen headlamps",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "EXTERIOR",
+                "id": 1176
+            },
+            "description": "Tinted glass (all windows)",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "EXTERIOR",
+                "id": 1176
+            },
+            "description": "Deluxe intermittent windshield wipers",
+            "category": [
+                {
+                    "id": 1127,
+                    "removed": null
+                }
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "EXTERIOR",
+                "id": 1176
+            },
+            "description": "Rear window wiper w/fixed intermittent time delay & wet arm washer",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "EXTERIOR",
+                "id": 1176
+            },
+            "description": "RH sliding door w/vent glass",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "EXTERIOR",
+                "id": 1176
+            },
+            "description": "Galvanized steel corrosion protection w/lower body urethane coating",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Full floor length carpeting",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Tilt/sport steering column",
+            "category": [
+                {
+                    "id": 1087,
+                    "removed": null
+                }
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Electromechanical instrument panel-inc: 100-MPH speedometer, trip odometer w/reset, fuel/temp gauges",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Instrument cluster warning lights-inc: check engine, lift gate ajar, low fuel, oil pressure, voltage",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Seat belt/key-in-ignition/headlights-on warning chimes",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Electronic speed control",
+            "category": [
+                {
+                    "id": 1033,
+                    "removed": null
+                }
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Pwr liftgate release",
+            "category": [
+                {
+                    "id": 1198,
+                    "removed": null
+                }
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Inside hood release",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Front door window demisters",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Bi-level heater/defroster",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Cigar lighter",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Passenger side instrument panel glove box",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Lockable storage drawer under front passenger seat",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Inside day/night rearview mirror",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Additional storage-inc: in left side of rear trim panel, upper cubby bin, ash receiver, 2-cup holders for second passenger seat, storage bin w/cover/armrest, 2-cup holders above wheelhouse for third seat",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "INTERIOR",
+                "id": 1220
+            },
+            "description": "Front/rear dome lights",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "SAFETY",
+                "id": 1343
+            },
+            "description": "Driver & front passenger airbags supplemental restraint system",
+            "category": [
+                {
+                    "id": 1001,
+                    "removed": null
+                },
+                {
+                    "id": 1002,
+                    "removed": null
+                }
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "SAFETY",
+                "id": 1343
+            },
+            "description": "Front/rear outboard active 3-point unibelts, rear center lap belt",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "header": {
+                "value": "SAFETY",
+                "id": 1343
+            },
+            "description": "Dual horns",
+            "category": [
+                
+            ],
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        }
+    ],
+    "factoryOption": [
+        
+    ],
+    "genericEquipment": [
+        {
+            "categoryId": 1001,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1002,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1014,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1022,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1033,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1051,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "Engine",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1059,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "Engine",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1065,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1073,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1082,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1084,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1087,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1088,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1093,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1102,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1127,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1130,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1175,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1176,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1198,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1207,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        },
+        {
+            "categoryId": 1273,
+            "definition": null,
+            "styleId": [
+                137768
+            ],
+            "installed": {
+                "cause": "BaseEquipment",
+                "detail": null
+            }
+        }
+    ],
+    "consumerInformation": [
+        
+    ],
+    "technicalSpecification": [
+        
+    ],
+    "exteriorColor": [
+        
+    ],
+    "interiorColor": [
+        
+    ],
+    "genericColor": [
+        
+    ],
+    "basePrice": {
+        "invoice": {
+            "low": 17512.52,
+            "high": 17512.52
+        },
+        "msrp": {
+            "low": 19304.0,
+            "high": 19304.0
+        },
+        "destination": {
+            "low": 560.0,
+            "high": 560.0
+        },
+        "unknown": false
+    },
+    "country": "US",
+    "language": "en",
+    "modelYear": 1994,
+    "bestMakeName": "Dodge",
+    "bestModelName": "Caravan",
+    "bestStyleName": "3dr Grand SE 119\" WB",
+    "bestTrimName": "Grand SE"
+}
+on test success
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

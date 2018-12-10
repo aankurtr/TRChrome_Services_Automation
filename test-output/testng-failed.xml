@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="ExtenteReports.ExtentReportClass"/>
+  </listeners>
+  <test name="Test1(failed)" parallel="tests">
+    <classes>
+      <class name="TestAPIs.Divisions">
+        <methods>
+          <include name="setup"/>
+          <include name="divisionRequestWithIncorrectAccountSecret"/>
+        </methods>
+      </class> <!-- TestAPIs.Divisions -->
+      <class name="TestAPIs.Styles">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestAPIs.Styles -->
+      <class name="TestAPIs.Vin">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestAPIs.Vin -->
+      <class name="TestAPIs.Models">
+        <methods>
+          <include name="modelsRequestInvalidAccountSecret"/>
+          <include name="modelsRequestInvalidAccoutNumber"/>
+          <include name="modelsRequestInvalidService"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestAPIs.Models -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
