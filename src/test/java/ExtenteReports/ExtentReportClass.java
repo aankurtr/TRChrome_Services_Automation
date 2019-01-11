@@ -44,9 +44,9 @@ public class ExtentReportClass implements ITestListener {
     }
     public void onStart(ITestContext context) {
         System.out.println("on start");
-        reports = new ExtentReports("/Users/ankuragrawal/IdeaProjects/TRChrome/build/reports/tests/test/extentreport.html");
+        reports = new ExtentReports("./build/reports/tests/test/extentreport.html");
         //reports = new ExtentReports(new SimpleDateFormat("yyyy-MM-dd hh-mm-ss-ms").format(new Date()) + "reports.html");
-        reports.loadConfig(new File("/Users/ankuragrawal/IdeaProjects/TRChrome/src/test/java/ExtenteReports/extent-config.xml"));
+        reports.loadConfig(new File("./src/test/java/ExtenteReports/extent-config.xml"));
     }
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
         System.out.println("on test success within percentage");

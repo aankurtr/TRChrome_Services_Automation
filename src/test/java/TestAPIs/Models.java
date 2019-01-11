@@ -16,8 +16,10 @@ import static org.hamcrest.Matchers.hasItems;
 public class Models extends Base{
 
     @BeforeMethod
-    public void setup(){
-        Base b;
+    public void initializeBaseClassSetup(){
+
+        super.setup();
+
     }
 
 

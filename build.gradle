@@ -48,4 +48,8 @@ dependencies {
     testCompile group: 'org.testng', name: 'testng', version: '6.10'
     compile group: 'javax.mail', name: 'mail', version: '1.4.1'
     compile group: 'javax.activation', name: 'activation', version: '1.1'
+    compile 'io.rest-assured:json-schema-validator:3.2.0'
+    compile 'com.github.java-json-tools:json-schema-validator:2.2.10'
+    compile 'com.github.java-json-tools:json-schema-core:1.2.10'
+
 }

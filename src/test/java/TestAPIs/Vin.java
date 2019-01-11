@@ -20,8 +20,9 @@ public class Vin extends Base {
     public static String VIN;
 
     @BeforeMethod
-    public static void setUp(){
-        Base b;
+    public void setUp(){
+
+        super.setup();
     }
 
 
@@ -31,7 +32,7 @@ public class Vin extends Base {
         Response rsp =
                 given().
                 when().
-                        get(this.RANDOM_VIN).
+                        get(RANDOM_VIN).
                 then().
                         log().
                         all().
@@ -41,7 +42,9 @@ public class Vin extends Base {
         Assert.assertEquals(rsp.statusCode(),SC_OK);
         VIN = (rsp.getBody()).asString();
         System.out.println(VIN);
-        Assert.assertEquals((rsp.getBody()).asString().length(),18);
+        Assert.assertEquals((rsp.getBody()).asString().length(),17);
+
+
 
     }
 
@@ -57,7 +60,7 @@ public class Vin extends Base {
 
         System.out.println("vin:"+  VIN.substring(1));
         given().
-                queryParam("vin", VIN.substring(1)).
+                queryParam("vin", VIN).
                 body(requestParams.toJSONString()).
                 contentType(ContentType.JSON).
         when().

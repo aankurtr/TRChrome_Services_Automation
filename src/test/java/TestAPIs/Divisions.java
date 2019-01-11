@@ -20,7 +20,10 @@ public class Divisions extends Base {
 
     @BeforeMethod
     public void setup(){
-        Base b;
+
+
+        super.setup();
+
     }
 
 
